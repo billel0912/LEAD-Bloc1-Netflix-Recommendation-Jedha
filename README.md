@@ -92,3 +92,8 @@ j.	**Monitor DAG Execution:** Monitor the execution of our DAG in the Airflow UI
 
 
 ![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/809820da-c434-4f41-8aea-d569b5480694)
+
+
+
+# ![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/6386d9f5-74d6-4105-8cc2-a52700a3521d) Remark: 
+**Due to GitHub's file size limitations (files over 25 MB cannot be uploaded), the original large files data_cleaned.csv and model.pkl have been replaced with smaller sample versions named data_cleaned_sample.csv and model_sample.pkl. These sample files are available in the corresponding Preprocessing_Netflix_Sample_GitHub and Project_Final_Kafka_Sample_GitHub directories on GitHub. For the full-sized files, refer to the Google Drive directories.**
