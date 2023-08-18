@@ -1,0 +1,17 @@
+[2023-07-29T16:54:13.157+0200] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_dag.run_start manual__2023-07-29T14:54:06.276852+00:00 [queued]>
+[2023-07-29T16:54:13.168+0200] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_dag.run_start manual__2023-07-29T14:54:06.276852+00:00 [queued]>
+[2023-07-29T16:54:13.168+0200] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-29T16:54:13.195+0200] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): run_start> on 2023-07-29 14:54:06.276852+00:00
+[2023-07-29T16:54:13.203+0200] {standard_task_runner.py:57} INFO - Started process 5821 to run task
+[2023-07-29T16:54:13.209+0200] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'daily_dag', 'run_start', 'manual__2023-07-29T14:54:06.276852+00:00', '--job-id', '262', '--raw', '--subdir', '/home/abbasbil/jedha/lead/projet/project_final_kafka/dags/dag.py', '--cfg-path', '/tmp/tmpesv8t7gi']
+[2023-07-29T16:54:13.210+0200] {standard_task_runner.py:85} INFO - Job 262: Subtask run_start
+[2023-07-29T16:54:13.277+0200] {task_command.py:410} INFO - Running <TaskInstance: daily_dag.run_start manual__2023-07-29T14:54:06.276852+00:00 [running]> on host ABBASBILL.localdomain
+[2023-07-29T16:54:13.380+0200] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='daily_dag' AIRFLOW_CTX_TASK_ID='run_start' AIRFLOW_CTX_EXECUTION_DATE='2023-07-29T14:54:06.276852+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-29T14:54:06.276852+00:00'
+[2023-07-29T16:54:13.381+0200] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-07-29T16:54:13.382+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "echo 'START'"]
+[2023-07-29T16:54:13.393+0200] {subprocess.py:86} INFO - Output:
+[2023-07-29T16:54:13.394+0200] {subprocess.py:93} INFO - START
+[2023-07-29T16:54:13.394+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-07-29T16:54:13.429+0200] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=daily_dag, task_id=run_start, execution_date=20230729T145406, start_date=20230729T145413, end_date=20230729T145413
+[2023-07-29T16:54:13.464+0200] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-29T16:54:13.497+0200] {taskinstance.py:2653} INFO - 2 downstream tasks scheduled from follow-on schedule check
