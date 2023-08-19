@@ -18,7 +18,7 @@ The data folder holds the raw data, which was sourced from https://www.kaggle.co
 In addition, this directory also includes information related to model training. The model folder contains a serialized version of the trained recommendation model, stored as a pickle file named “model.pkl”. This model is used to generate movie predictions.
 The output files, data_cleaned.csv and data_reco.csv, model.pkl which contain the preprocessed, cleaned data and model training are available on Google Drive.
 
-## Folder Airflow, Kafka and FASTAPI:
+## Folder Airflow![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/9679373f-f151-4117-9696-7a712769d2e4), Kafka![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/8a330337-5048-4ce4-9e7b-7e24e0362887) and FASTAPI![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/92dbeb3f-bb06-442a-81f9-e661b7754ada):
 In folder “**Project_Final_Kafka**”, we find:
 
 **airflow.cfg**: is a configuration file for Apache Airflow, a platform for creating, scheduling, and monitoring workflows. It contains Airflow’s settings and can be edited to change them.
