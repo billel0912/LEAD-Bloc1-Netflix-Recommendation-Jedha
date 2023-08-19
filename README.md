@@ -93,6 +93,13 @@ j.	**Monitor DAG Execution:** Monitor the execution of our DAG in the Airflow UI
 
 ![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/809820da-c434-4f41-8aea-d569b5480694)
 
+## Global Kafka Confluent Streaming Diagram:
+
+The Kafka Confluent data flow involves real-time data generation from the Jedha API, processed by producer.py to be published in Kafka topics. Kafka Confluent, integrated with Amazon S3 Sink, stores data in an S3 bucket. The consumer.py script consumes data, FastAPI predicts movie recommendations, and PostgreSQL stores results. DataClips visualize data, while Zapier automates email notifications for new predictions.
+This orchestrated flow enables efficient data streaming, processing, and storage, enhancing the Netflix recommendation engine's functionality and user experience
+
+![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/61c6c3d9-3dc4-4a77-977b-b8810176341d)
+
 
 
 # ![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/6386d9f5-74d6-4105-8cc2-a52700a3521d) Remark: 
