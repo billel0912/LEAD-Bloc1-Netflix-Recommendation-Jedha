@@ -83,7 +83,7 @@ h.	**Run daily_dag from Airflow UI:** After accessing the Airflow UI at http://l
 ![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/2879e135-a0e9-40dc-982d-0902ea8e898d)
 
 
-a.	**DAG Definition:** The **daily_dag** is defined in the **dag.py** script. This DAG includes tasks such as **run_start**, **run_all**, and **run_end**. The **run_all** task is responsible for executing the three scripts. It starts by launching **app.py** (FASTAPI) first. To accommodate the large size of the FASTAPI model, there is a 500-second delay to ensure that the FASTAPI launches successfully before the **consumer.py** script starts. This delay is crucial to prevent the **consumer.py** script from failing as it depends on the **FASTAPI**. Furthermore, the **producer.py** and **consumer.py** scripts are launched in the background within the Ubuntu shell.
+i.	**DAG Definition:** The **daily_dag** is defined in the **dag.py** script. This DAG includes tasks such as **run_start**, **run_all**, and **run_end**. The **run_all** task is responsible for executing the three scripts. It starts by launching **app.py** (FASTAPI) first. To accommodate the large size of the FASTAPI model, there is a 500-second delay to ensure that the FASTAPI launches successfully before the **consumer.py** script starts. This delay is crucial to prevent the **consumer.py** script from failing as it depends on the **FASTAPI**. Furthermore, the **producer.py** and **consumer.py** scripts are launched in the background within the Ubuntu shell.
 
 If we launch in shell **python3 producer.py**:
 
