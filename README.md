@@ -54,16 +54,21 @@ pip install confluent-kafka confluent-kafka[avro] joblib requests psycopg2 sqlal
 ### Steps to launch:
 
 a.	**Check Python Version:** Verify your Python version. If it's Python 3.10, use that version in the following steps. For example: python3.10 –version
+
 b.	**Install Apache Airflow:** Install Apache Airflow 2.6.3 using pip with the specified Python version and constraints: 
 **pip install 'apache-airflow==2.6.3' --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.6.3/constraints-3.10.txt**
+
 c.	**Set AIRFLOW_HOME:** Set the AIRFLOW_HOME environment variable to the current directory: 
 **export AIRFLOW_HOME=.**
+
 d.	**Initialize Airflow Database:** Initialize the Airflow database: airflow db init
+
 e.	**Start Airflow Web Server:** Start the Airflow web server to manage your DAGs locally. Choose a port number (e.g., 8080): airflow webserver -p 8080 (Access the Airflow UI by visiting http://localhost:8080 in your web browser.)
 
 ![image](https://github.com/billel0912/LEAD-Bloc1-Netflix-Recommendation-Jedha/assets/114284427/4e788f86-8ad0-4fc0-bbd1-4cdb01a1f9ef)
 
 f.	**Create Admin User:** Create an admin user for authentication in the Airflow UI: **airflow users create --username admin --firstname FIRST_NAME --lastname LAST_NAME --password admin --role Admin --email admin@example.org**
+
 g.	**Start Airflow Scheduler:** Launch the Airflow scheduler to handle DAG scheduling: airflow scheduler
 After starting the scheduler, open your web browser and navigate to http://localhost:8080 to access the Airflow UI. Once the UI is open, you should see the daily_dag listed among your DAGs. This allows you to monitor, trigger, and manage the execution of your daily_dag from the Airflow UI.
 
