@@ -55,8 +55,10 @@ pip install confluent-kafka confluent-kafka[avro] joblib requests psycopg2 sqlal
 
 a.	**Check Python Version:** Verify your Python version. If it's Python 3.10, use that version in the following steps. For example: python3.10 –version
 
+
 b.	**Install Apache Airflow:** Install Apache Airflow 2.6.3 using pip with the specified Python version and constraints: 
 **pip install 'apache-airflow==2.6.3' --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.6.3/constraints-3.10.txt**
+
 
 c.	**Set AIRFLOW_HOME:** Set the AIRFLOW_HOME environment variable to the current directory: 
 **export AIRFLOW_HOME=.**
